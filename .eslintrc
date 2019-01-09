@@ -3,16 +3,12 @@
   "env": {
     "node": true
   },
-  "extends": [
-    "airbnb-base"
-  ],
+  "extends": ["airbnb-base"],
   "rules": {
     "space-before-function-paren": ["error", "never"],
     "max-len": ["warn", 150],
     "no-console": "off",
-    "implicit-arrow-linebreak": [
-      "error",
-      "beside"
-    ]
+    "arrow-parens": ["error", "as-needed"],
+    "implicit-arrow-linebreak": ["off"]
   }
 }

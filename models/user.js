@@ -1,10 +1,10 @@
-module.exports = (sequelize, type) => {
-  sequelize.define('user', {
-    id: {
-      type: type.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
-    },
-    name: type.STRING,
-  });
+'use strict';
+module.exports = (sequelize, DataTypes) => {
+  const User = sequelize.define('User', {
+    title: DataTypes.STRING
+  }, {});
+  User.associate = function(models) {
+    // associations can be defined here
+  };
+  return User;
 };
